@@ -15,7 +15,7 @@ struct LoadingView: View {
             
             Text("Loading data")
                 .font(.body)
-                .foregroundColor(.primaryColor)
+                .foregroundColor(.accent)
         }
     }
 }

@@ -18,7 +18,5 @@ struct MyFavoriteMakesApp: App {
     
 }
 
-#warning("Add app icon")
-#warning("Add SplashScreen")
 #warning("Add support for disabling UI when UnitTesting")
 #warning("Add support for UITesting")
