@@ -13,3 +13,13 @@ enum MFMError: Error {
     case notFound
     case invalidData
 }
+
+extension MFMError: LocalizedError {
+    var errorDescription: String? {
+        switch self {
+        case .unavailable: return "The service seems unavailable"
+        case .notFound: return "The item was not found"
+        case .invalidData: return "The data is not valid for the current context"
+        }
+    }
+}

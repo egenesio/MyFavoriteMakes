@@ -24,12 +24,18 @@ struct MainView: View {
                 LoadingView()
             
             } else if let error = viewModel.uiState.error {
-                #warning("Add test case for this. Improve UI. Retry needed?")
-                Text(error.localizedDescription)
+                ErrorView(
+                    error: error,
+                    onRetry: fetchData
+                )
             }
         }
         .navigationViewStyle(StackNavigationViewStyle())
-        .task {
+        .onAppear(perform: fetchData)
+    }
+    
+    private func fetchData() {
+        Task {
             await viewModel.refreshData()
         }
     }
