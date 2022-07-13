@@ -27,7 +27,7 @@ struct FavoritesCountView: View {
                 .font(.system(size: 50).weight(.bold))
                 .foregroundColor(.primaryColor)
             
-            Text("favorites vehicle makes")
+            Text("favorite vehicle makes")
                 .font(.largeTitle.italic())
                 .foregroundColor(.primaryColor60)
                 .fontWeight(.black)
@@ -49,6 +49,16 @@ struct FavoritesCountView: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
         .padding(Padding.large)
+        .toolbar {
+            ToolbarItem(placement: .principal) {
+                HStack {
+                    Image(systemName: "car.fill")
+                    Text("My favorite makes")
+                        .font(.headline)
+                }
+                .foregroundColor(Color.accent80)
+            }
+        }
     }
 }
 
