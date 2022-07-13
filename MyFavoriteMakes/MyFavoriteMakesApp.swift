@@ -10,13 +10,21 @@ import SwiftUI
 @main
 struct MyFavoriteMakesApp: App {
     
+    var isUnitTesting: Bool {
+        ProcessInfo.processInfo.arguments.contains("-UNITTEST")
+    }
+    
     var body: some Scene {
         WindowGroup {
-            MainView()
+            
+            if isUnitTesting {
+                EmptyView()
+            } else {
+                MainView()
+            }
         }
     }
     
 }
 
-#warning("Add support for disabling UI when UnitTesting")
 #warning("Add support for UITesting")
