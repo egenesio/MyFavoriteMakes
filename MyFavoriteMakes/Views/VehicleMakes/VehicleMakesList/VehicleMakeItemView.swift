@@ -17,6 +17,10 @@ struct VehicleMakeItemView: View {
     private let size: CGFloat = 48
     private let cornerRadius: CGFloat = 8
     
+    private var favoriteIconName: String {
+        item.isFavorite ? "heart.fill" : "heart"
+    }
+    
     var body: some View {
         HStack(
             spacing: Padding.regular
@@ -40,14 +44,17 @@ struct VehicleMakeItemView: View {
             
             } else {
                 Button(action: onFavoriteTap) {
-                    Image(systemName: item.isFavorite ? "heart.fill" : "heart")
+                    Image(systemName: favoriteIconName)
                         .font(.headline)
                         .foregroundColor(Color.red)
                         .padding(Padding.regular)
+                        .accessibilityIdentifier("favoriteStatusImage")
                 }
+                .accessibilityLabel(favoriteIconName)
             }
         }
         .padding(Padding.regular)
+        .accessibilityIdentifier("vehicleMakeItemView-\(item.slug)")
     }
  
     private func onFavoriteTap() {

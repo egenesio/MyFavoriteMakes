@@ -26,6 +26,7 @@ struct FavoritesCountView: View {
             Text("\(viewModel.favoriteMakesCount)")
                 .font(.system(size: 50).weight(.bold))
                 .foregroundColor(.primaryColor)
+                .accessibilityIdentifier("favoriteMakesCountText")
             
             Text("favorite vehicle makes")
                 .font(.largeTitle.italic())
@@ -42,6 +43,7 @@ struct FavoritesCountView: View {
                 
                 Text("See all vehicle makes")
                     .withButtonStyle()
+                    .accessibilityIdentifier("seeAllVehicleMakesButton")
                 
             }
             .padding([.bottom], Padding.large)

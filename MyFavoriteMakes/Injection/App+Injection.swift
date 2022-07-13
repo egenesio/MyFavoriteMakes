@@ -13,6 +13,9 @@ extension Resolver.Name {
     static let mock = Self("mock")
     static let test = Self("test")
     
+    static let uiTest = Self("ui-test")
+    static let uiTestFail = Self("ui-test-fail")
+    
     static var mode: Resolver.Name = .live
 }
 
@@ -33,9 +36,16 @@ extension Resolver: ResolverRegistering {
         register(name: .live) { VehicleMakesDataOriginFake() as VehicleMakesDataOrigin }
         register(name: .live) { VehicleMakesFavoritesDataOriginFake() as VehicleMakesFavoritesDataOrigin }
         
-        // mock components
+        #if DEBUG
         register(name: .mock) { VehicleMakesDataOriginMock() as VehicleMakesDataOrigin }
         register(name: .mock) { VehicleMakesFavoritesDataOriginMock() as VehicleMakesFavoritesDataOrigin }
+        
+        register(name: .uiTest) { VehicleMakesDataOriginMock() as VehicleMakesDataOrigin }
+        register(name: .uiTest) { VehicleMakesFavoritesDataOriginMock() as VehicleMakesFavoritesDataOrigin }
+        
+        register(name: .uiTestFail) { VehicleMakesDataOriginUITestFailed() as VehicleMakesDataOrigin }
+        register(name: .uiTestFail) { VehicleMakesFavoritesDataOriginMock() as VehicleMakesFavoritesDataOrigin }
+        #endif
     }
     
     /// Registers the Data Stores  into the Resolver register

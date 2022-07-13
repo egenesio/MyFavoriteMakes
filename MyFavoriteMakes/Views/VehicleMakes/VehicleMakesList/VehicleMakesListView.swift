@@ -23,6 +23,7 @@ struct VehicleMakesListView: View {
             }
         }
         .navigationTitle("Vehicle Makes")
+        .accessibilityIdentifier("vehicleMakesListView")
     }
 }
 

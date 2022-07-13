@@ -13,7 +13,6 @@
 		444EF9D4287C697100C76CA3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 444EF9D3287C697100C76CA3 /* Preview Assets.xcassets */; };
 		444EF9DE287C697100C76CA3 /* VehicleMakesOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444EF9DD287C697100C76CA3 /* VehicleMakesOperationTests.swift */; };
 		444EF9E8287C697100C76CA3 /* MyFavoriteMakesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444EF9E7287C697100C76CA3 /* MyFavoriteMakesUITests.swift */; };
-		444EF9EA287C697100C76CA3 /* MyFavoriteMakesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444EF9E9287C697100C76CA3 /* MyFavoriteMakesUITestsLaunchTests.swift */; };
 		444EF9F8287C6C6800C76CA3 /* VehicleMakesDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444EF9F7287C6C6800C76CA3 /* VehicleMakesDataStore.swift */; };
 		444EF9FC287C701D00C76CA3 /* VehicleMakesFavoritesDataOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444EF9FB287C701D00C76CA3 /* VehicleMakesFavoritesDataOrigin.swift */; };
 		444EF9FF287C706200C76CA3 /* VehicleMakesDataOrigin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444EF9FE287C706200C76CA3 /* VehicleMakesDataOrigin.swift */; };
@@ -37,6 +36,9 @@
 		444EFA2B287D788500C76CA3 /* FavoritesCountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444EFA2A287D788500C76CA3 /* FavoritesCountView.swift */; };
 		444EFA2D287D9FCE00C76CA3 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444EFA2C287D9FCE00C76CA3 /* LoadingView.swift */; };
 		444EFA30287DA36000C76CA3 /* MockGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444EFA2F287DA36000C76CA3 /* MockGroup.swift */; };
+		44B80865287EFDBF0012D757 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B80864287EFDBF0012D757 /* ErrorView.swift */; };
+		44B80867287F03900012D757 /* VehicleMakesDataOriginUITestFailed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B80866287F03900012D757 /* VehicleMakesDataOriginUITestFailed.swift */; };
+		44B8086B287F06DC0012D757 /* MFMAppLaunchArgument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B8086A287F06DC0012D757 /* MFMAppLaunchArgument.swift */; };
 		44B8358D287DA55E005C56CA /* VehicleMakesDataOriginMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B8358C287DA55E005C56CA /* VehicleMakesDataOriginMock.swift */; };
 		44B8358F287DA57A005C56CA /* VehicleMakesFavoritesDataOriginMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B8358E287DA57A005C56CA /* VehicleMakesFavoritesDataOriginMock.swift */; };
 		44B83595287DABE8005C56CA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B83594287DABE8005C56CA /* Colors.swift */; };
@@ -72,7 +74,6 @@
 		444EF9DD287C697100C76CA3 /* VehicleMakesOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMakesOperationTests.swift; sourceTree = "<group>"; };
 		444EF9E3287C697100C76CA3 /* MyFavoriteMakesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFavoriteMakesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		444EF9E7287C697100C76CA3 /* MyFavoriteMakesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavoriteMakesUITests.swift; sourceTree = "<group>"; };
-		444EF9E9287C697100C76CA3 /* MyFavoriteMakesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFavoriteMakesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		444EF9F7287C6C6800C76CA3 /* VehicleMakesDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMakesDataStore.swift; sourceTree = "<group>"; };
 		444EF9FB287C701D00C76CA3 /* VehicleMakesFavoritesDataOrigin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMakesFavoritesDataOrigin.swift; sourceTree = "<group>"; };
 		444EF9FE287C706200C76CA3 /* VehicleMakesDataOrigin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMakesDataOrigin.swift; sourceTree = "<group>"; };
@@ -95,6 +96,9 @@
 		444EFA2A287D788500C76CA3 /* FavoritesCountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCountView.swift; sourceTree = "<group>"; };
 		444EFA2C287D9FCE00C76CA3 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		444EFA2F287DA36000C76CA3 /* MockGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGroup.swift; sourceTree = "<group>"; };
+		44B80864287EFDBF0012D757 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		44B80866287F03900012D757 /* VehicleMakesDataOriginUITestFailed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMakesDataOriginUITestFailed.swift; sourceTree = "<group>"; };
+		44B8086A287F06DC0012D757 /* MFMAppLaunchArgument.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFMAppLaunchArgument.swift; sourceTree = "<group>"; };
 		44B8358C287DA55E005C56CA /* VehicleMakesDataOriginMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMakesDataOriginMock.swift; sourceTree = "<group>"; };
 		44B8358E287DA57A005C56CA /* VehicleMakesFavoritesDataOriginMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleMakesFavoritesDataOriginMock.swift; sourceTree = "<group>"; };
 		44B83594287DABE8005C56CA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -190,7 +194,6 @@
 			isa = PBXGroup;
 			children = (
 				444EF9E7287C697100C76CA3 /* MyFavoriteMakesUITests.swift */,
-				444EF9E9287C697100C76CA3 /* MyFavoriteMakesUITestsLaunchTests.swift */,
 			);
 			path = MyFavoriteMakesUITests;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				444EFA01287C708900C76CA3 /* VehicleMake.swift */,
 				44B83598287DE43A005C56CA /* VehicleMake+Array.swift */,
 				444EFA24287D68F900C76CA3 /* MFMError.swift */,
+				44B8086A287F06DC0012D757 /* MFMAppLaunchArgument.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -228,8 +232,9 @@
 				44B83591287DA636005C56CA /* VehicleMakes */,
 				444EFA2E287DA34C00C76CA3 /* Utils */,
 				444EFA12287C8E9100C76CA3 /* Theme */,
-				444EF9CE287C697000C76CA3 /* MainView.swift */,
 				444EFA2C287D9FCE00C76CA3 /* LoadingView.swift */,
+				44B80864287EFDBF0012D757 /* ErrorView.swift */,
+				444EF9CE287C697000C76CA3 /* MainView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 				444EF9FE287C706200C76CA3 /* VehicleMakesDataOrigin.swift */,
 				444EFA03287C70C900C76CA3 /* VehicleMakesDataOriginFake.swift */,
 				44B8358C287DA55E005C56CA /* VehicleMakesDataOriginMock.swift */,
+				44B80866287F03900012D757 /* VehicleMakesDataOriginUITestFailed.swift */,
 			);
 			path = VehicleMakesData;
 			sourceTree = "<group>";
@@ -457,6 +463,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				444EFA02287C708900C76CA3 /* VehicleMake.swift in Sources */,
+				44B80867287F03900012D757 /* VehicleMakesDataOriginUITestFailed.swift in Sources */,
 				44B83595287DABE8005C56CA /* Colors.swift in Sources */,
 				444EFA2B287D788500C76CA3 /* FavoritesCountView.swift in Sources */,
 				444EFA0F287C77F900C76CA3 /* VehicleMakesFavoritesDataOriginFake.swift in Sources */,
@@ -464,8 +471,10 @@
 				444EF9FF287C706200C76CA3 /* VehicleMakesDataOrigin.swift in Sources */,
 				44B83599287DE43A005C56CA /* VehicleMake+Array.swift in Sources */,
 				44B83597287DAEFB005C56CA /* ButtonStyle.swift in Sources */,
+				44B80865287EFDBF0012D757 /* ErrorView.swift in Sources */,
 				44B8358F287DA57A005C56CA /* VehicleMakesFavoritesDataOriginMock.swift in Sources */,
 				444EFA2D287D9FCE00C76CA3 /* LoadingView.swift in Sources */,
+				44B8086B287F06DC0012D757 /* MFMAppLaunchArgument.swift in Sources */,
 				444EF9CF287C697000C76CA3 /* MainView.swift in Sources */,
 				444EF9FC287C701D00C76CA3 /* VehicleMakesFavoritesDataOrigin.swift in Sources */,
 				444EFA0B287C748800C76CA3 /* App+Injection.swift in Sources */,
@@ -500,7 +509,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				444EF9EA287C697100C76CA3 /* MyFavoriteMakesUITestsLaunchTests.swift in Sources */,
 				444EF9E8287C697100C76CA3 /* MyFavoriteMakesUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
