@@ -20,6 +20,8 @@ Dependencies:
 
 ## What to do?
 
+> Before building the project, please update the Swift Package Manager repo from File -> Packages -> Update to Latest Package Version. This will download the required dependencies.
+
 Well you can clone the repository, open Xcode, pick an iPhone Simulator and run the app.
 
 Otherwise there is a bunch of Unit Tests and UI Tests to run if you are interested in that.
